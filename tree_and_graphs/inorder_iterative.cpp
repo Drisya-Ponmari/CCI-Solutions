@@ -12,9 +12,10 @@ using namespace std;
 void inorder_iterative(TreeNode* root){
     if(root == NULL) return;
     stack<TreeNode*> inorder_stack;
+    inorder_stack.push(new TreeNode(0));
     
     TreeNode* itr = root;
-    while(!inorder_stack.empty()){
+    while(inorder_stack.size() > 1){
         if(itr == NULL){
             TreeNode* stack_top = inorder_stack.top();
             cout << stack_top->value;
