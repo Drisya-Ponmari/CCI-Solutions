@@ -12,7 +12,6 @@ using namespace std;
 void inorder_iterative(TreeNode* root){
     if(root == NULL) return;
     stack<TreeNode*> inorder_stack;
-    inorder_stack.push(root);
     
     TreeNode* itr = root;
     while(!inorder_stack.empty()){
@@ -23,7 +22,8 @@ void inorder_iterative(TreeNode* root){
             itr = stack_top -> right;
         }else{
             // Push till finding a NULL node. 
-            inorder_stack.push(itr->left);
+            inorder_stack.push(itr);
+            itr = itr ->left;
         }
     }
 }
