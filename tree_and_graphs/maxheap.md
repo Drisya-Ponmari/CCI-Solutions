@@ -1,7 +1,7 @@
 
 # Max Heap 
 
-Complete binary tree where each node is greate than(or equal) it's children.
+Complete binary tree where each node is greate than(or equal) it's children.(Max heap property)
 
 ## Time complexities 
 o(1) to get the max element 
