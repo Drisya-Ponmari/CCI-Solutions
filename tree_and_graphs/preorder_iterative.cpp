@@ -4,7 +4,7 @@
 #include "TreeNode.h"
 using namespace std;
 
-// Left Tree -> Right Tree -> Value 
+//  Value  -> Left Tree -> Right Tree
 /**
  * Implemented using 'STACK'
  * Similar to 'inorder_iterative' method. Instead of printing value while popping, do it while pushing. 
