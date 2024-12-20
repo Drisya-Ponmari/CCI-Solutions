@@ -23,3 +23,4 @@ This has $${2^k - 1}$$ nodes where k is the level of tree and root level is 1.
 
 ## Binary search tree
 Binary tree where left_subtree <= root <= right_subtree
+
